@@ -19711,10 +19711,6 @@ input:active, input:focus, button:active, button:focus {
 .button {
   display: flex;
   justify-content: center; }
-  @media screen and (max-width: 991px) {
-    .button {
-      flex-direction: column;
-      align-items: center; } }
   .button .button-default {
     position: relative;
     background-color: #97BE0D;
@@ -19734,8 +19730,7 @@ input:active, input:focus, button:active, button:focus {
       margin-right: 0; }
     @media screen and (max-width: 991px) {
       .button .button-default {
-        font-size: 16px;
-        margin-bottom: 30px; } }
+        font-size: 16px; } }
 
 .hexagon {
   position: absolute;
@@ -20087,6 +20082,9 @@ input:active, input:focus, button:active, button:focus {
             height: calc((100% - 30px) / 2) !important; } }
         .section-clients .clients .clients-bg .swiper-clients .swiper-slide img {
           max-width: 100%; }
+          @media screen and (max-width: 991px) {
+            .section-clients .clients .clients-bg .swiper-clients .swiper-slide img {
+              max-height: 140px; } }
       @media screen and (max-width: 991px) {
         .section-clients .clients .clients-bg .swiper-clients .swiper-button-next-clients, .section-clients .clients .clients-bg .swiper-clients .swiper-button-prev-clients {
           display: none; } }

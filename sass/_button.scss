@@ -2,14 +2,8 @@
     display: flex;
     justify-content: center;
 
-    @media screen and (max-width: 991px) {
-        flex-direction: column;
-        align-items: center;
-    }
-
     .button-default {
         position: relative;
-        // width: 215px;
         background-color: $primary;
         padding: 15px 30px;
         border: none;
@@ -30,7 +24,6 @@
         
         @media screen and (max-width: 991px) {
             font-size: 16px;
-            margin-bottom: 30px;
         }
     }
 }
