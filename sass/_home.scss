@@ -1,7 +1,9 @@
 .main {
-    @media screen and (max-width: 991px) {
-        margin-top: 70px;
-    }
+    margin-top: 200px;
+
+    // @media screen and (max-width: 991px) {
+    //     margin-top: 70px;
+    // }
 }
 .section {
     .section-top {
@@ -240,7 +242,7 @@
     .section-services {
         // background-color: $gray-2;
         padding-top: 30px;
-        padding-bottom: 50px;
+        padding-bottom: 0px;
 
         .section-services-top {
             display: flex;
@@ -256,24 +258,24 @@
             margin-bottom: 30px;
 
 			.content-text {
-				background-color: $primary;
+				background-color: $white;
 				width: 100%;
 				height: auto;
 				position: absolute;
 				bottom: 0;
 				left: 0;
-				z-index: 999;
+				z-index: 90;
 				padding: 15px 18px;
 
 				.text-title {
-					color: $white;
+					color: $gray-1;
 					font-size: 20px;
 					font-weight: 700;
 					margin-bottom: 8px;
 				}
 
 				.text-subtitle {
-					color: $white;
+					color: $gray-3;
 					font-size: 16px;
 					font-weight: 400;
 				}

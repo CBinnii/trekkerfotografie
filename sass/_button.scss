@@ -21,6 +21,30 @@
         &:last-of-type {
             margin-right: 0;
         }
+
+        &.white {
+            background-color: $white;
+        }
+
+        &.primary {
+            background-color: $primary;
+        }
+
+        &.black {
+            background-color: $black;
+        }
+
+        &.light {
+            background-color: $gray-4;
+        }
+
+        &.transparent {
+            background-color: transparent;
+        }
+
+        &.btn-default-rounded {
+            padding: 16px;
+        }
         
         @media screen and (max-width: 991px) {
             font-size: 16px;

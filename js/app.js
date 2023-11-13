@@ -16,6 +16,21 @@ function menuMobile() {
     }
 }
 
+// SCROLL ==================================
+window.addEventListener("scroll", function() {
+    header = $('#header');
+
+    st = window.pageYOffset || document.body.scrollTop || document.documentElement.scrollTop;
+    
+    if (st >= 100) {
+        header.addClass('scroll');
+    } else {
+        header.removeClass('scroll');
+    }
+    // lastScrollTop = st;
+
+}, false);
+
 // Initialize Swiper
 var swiperGeral = new Swiper(".slider-geral");
 
@@ -57,9 +72,9 @@ var swiperClients = new Swiper(".swiper-clients", {
         el: ".swiper-pagination-slider-clients",
         clickable: true
     },
-    navigation: {
-        nextEl: ".swiper-button-next-clients",
-        prevEl: ".swiper-button-prev-clients",
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
     },
     breakpoints: {
         100: {
@@ -70,6 +85,12 @@ var swiperClients = new Swiper(".swiper-clients", {
         },
         991: {
             slidesPerView: 4,
+            grid: {
+                rows: 1,
+            },
+        },
+        1500: {
+            slidesPerView: 6,
             grid: {
                 rows: 1,
             },

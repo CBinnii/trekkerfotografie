@@ -17,17 +17,14 @@
         }
     }
 
-    .container {
-        position: relative;
-    }
-    
     .clients {
         .clients-bg {
             background-color: $white;
-            padding: 50px 0;
+            padding: 48px;
+            position: relative;
 
             @media screen and (max-width: 991px) {
-                padding: 24px 0;
+                padding: 24px 16px;
             }
 
             .swiper-clients {
@@ -74,20 +71,12 @@
         }
     }
 
-    .swiper-button-next-clients {
-        right: -35px;
-    }
-    
     .swiper-button-next-clients,.swiper-button-prev-clients {
-        z-index: 999;
-        top: 65%;
+        z-index: 90;
+        top: 50%;
 
         @media screen and (max-width: 991px) {
             display: none;
         }
-    }
-
-    .swiper-button-prev-clients {
-        left: -35px;
     }
 }
