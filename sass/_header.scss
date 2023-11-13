@@ -11,18 +11,31 @@
     transition: transform .3s ease 0s, opacity .3s 0s, z-index 0s 0s;
 
 	@media screen and (max-width: 991px) {
-		height: 150px;
+		height: 130px;
 	}
 	
 	&.scroll {
+		box-shadow: 6px 6px 24px rgba(0, 0, 0, 0.2);
 		transform: translateY(-122px);
+
+		@media screen and (max-width: 991px) {
+			transform: translateY(-36px);
+		}
 
 		.logo {
 			transform: translateY(27px) scale(0.74);
+			
+			@media screen and (max-width: 991px) {
+				transform: translateY(18px) scale(0.8);
+			}
 		}
 
 		nav {
 			transform: translateY(25px);
+
+			@media screen and (max-width: 991px) {
+				transform: translateY(16px);
+			}
 		}
 	}
 
@@ -39,6 +52,11 @@
 		font-size: 2.4rem;
 		transform-origin: 0% 100%;
 		transform: translateY(0px) scale(1);
+
+		@media screen and (max-width: 991px) {
+			top: 24px;
+			left: 6.8%;
+		}
 
 		img {
 			width: 210px;
@@ -59,12 +77,28 @@
 		text-align: right;
 		transform: translateY(0px);
 
+		@media screen and (max-width: 991px) {
+			right: auto;
+			left: 6.8%;
+			top: 77px;
+		}
+
 		li {
 			line-height: 1;
 			display: inline-block;
 			vertical-align: middle;
 			font-size: 1.2rem;
 			margin-left: 0.6em;
+			
+			@media screen and (max-width: 991px) {
+				margin-left: 0;
+				margin-right: 1em;
+			}
+
+			@media screen and (max-width: 450px) {
+				font-size: 0.82rem;
+			}
+	
 
 			a {
 				position: relative;

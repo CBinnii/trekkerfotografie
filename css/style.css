@@ -19780,7 +19780,7 @@ input:active, input:focus, button:active, button:focus {
     height: 500px; }
     @media screen and (max-width: 991px) {
       .slider .slider-home, .slider .slider-geral {
-        height: 200px; } }
+        height: 300px; } }
     .slider .slider-home .swiper-slide, .slider .slider-geral .swiper-slide {
       width: 100%;
       height: 100%;
@@ -19900,18 +19900,8 @@ input:active, input:focus, button:active, button:focus {
     bottom: initial;
     top: initial;
     left: initial; }
-  .swiper-pagination-bullets .swiper-pagination-bullet {
-    background: #D9D9D9;
-    width: 20px;
-    height: 20px;
-    opacity: 1;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); }
-    @media screen and (max-width: 991px) {
-      .swiper-pagination-bullets .swiper-pagination-bullet {
-        width: 15px;
-        height: 15px; } }
-    .swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
-      background: #97BE0D; }
+  .swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: #97BE0D; }
 
 .header {
   position: fixed;
@@ -19926,13 +19916,23 @@ input:active, input:focus, button:active, button:focus {
   transition: transform .3s ease 0s, opacity .3s 0s, z-index 0s 0s; }
   @media screen and (max-width: 991px) {
     .header {
-      height: 150px; } }
+      height: 130px; } }
   .header.scroll {
+    box-shadow: 6px 6px 24px rgba(0, 0, 0, 0.2);
     transform: translateY(-122px); }
+    @media screen and (max-width: 991px) {
+      .header.scroll {
+        transform: translateY(-36px); } }
     .header.scroll .logo {
       transform: translateY(27px) scale(0.74); }
+      @media screen and (max-width: 991px) {
+        .header.scroll .logo {
+          transform: translateY(18px) scale(0.8); } }
     .header.scroll nav {
       transform: translateY(25px); }
+      @media screen and (max-width: 991px) {
+        .header.scroll nav {
+          transform: translateY(16px); } }
   .header .inner {
     position: absolute;
     z-index: 5;
@@ -19944,6 +19944,10 @@ input:active, input:focus, button:active, button:focus {
     font-size: 2.4rem;
     transform-origin: 0% 100%;
     transform: translateY(0px) scale(1); }
+    @media screen and (max-width: 991px) {
+      .header .logo {
+        top: 24px;
+        left: 6.8%; } }
     .header .logo img {
       width: 210px;
       height: auto; }
@@ -19958,12 +19962,24 @@ input:active, input:focus, button:active, button:focus {
     right: 9.75%;
     text-align: right;
     transform: translateY(0px); }
+    @media screen and (max-width: 991px) {
+      .header nav {
+        right: auto;
+        left: 6.8%;
+        top: 77px; } }
     .header nav li {
       line-height: 1;
       display: inline-block;
       vertical-align: middle;
       font-size: 1.2rem;
       margin-left: 0.6em; }
+      @media screen and (max-width: 991px) {
+        .header nav li {
+          margin-left: 0;
+          margin-right: 1em; } }
+      @media screen and (max-width: 450px) {
+        .header nav li {
+          font-size: 0.82rem; } }
       .header nav li a {
         position: relative;
         display: block;
@@ -20029,9 +20045,6 @@ input:active, input:focus, button:active, button:focus {
           @media screen and (max-width: 991px) {
             .section-clients .clients .clients-bg .swiper-clients .swiper-slide img {
               max-height: 140px; } }
-      @media screen and (max-width: 991px) {
-        .section-clients .clients .clients-bg .swiper-clients .swiper-button-next-clients, .section-clients .clients .clients-bg .swiper-clients .swiper-button-prev-clients {
-          display: none; } }
   .section-clients .clients .swiper-pagination-slider-clients {
     display: none; }
     @media screen and (max-width: 991px) {
@@ -20046,6 +20059,9 @@ input:active, input:focus, button:active, button:focus {
 
 .main {
   margin-top: 200px; }
+  @media screen and (max-width: 991px) {
+    .main {
+      margin-top: 130px; } }
 
 .section .section-top {
   display: flex;
