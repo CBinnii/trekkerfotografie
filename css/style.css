@@ -20215,7 +20215,8 @@ input:active, input:focus, button:active, button:focus {
             font-size: 16px; } }
 .section .section-services {
   padding-top: 30px;
-  padding-bottom: 0px; }
+  padding-bottom: 0px;
+  overflow: hidden; }
   .section .section-services .section-services-top {
     display: flex;
     justify-content: space-between;
@@ -20329,7 +20330,8 @@ input:active, input:focus, button:active, button:focus {
     .single {
       margin-top: 130px; } }
   .single .section {
-    padding: 32px 0; }
+    padding: 32px 0;
+    overflow: hidden; }
     .single .section h1, .single .section .h1, .single .section h2, .single .section .h2, .single .section h3, .single .section .h3, .single .section h4, .single .section .h4, .single .section h5, .single .section .h5, .single .section h6, .single .section .h6 {
       font-family: "bookman-jf-pro", serif;
       font-weight: 400;
@@ -20386,7 +20388,8 @@ input:active, input:focus, button:active, button:focus {
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    height: 700px; }
     .gallery .image.video:before {
       content: "";
       width: 0;
