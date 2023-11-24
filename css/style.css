@@ -20377,13 +20377,21 @@ input:active, input:focus, button:active, button:focus {
         font-size: 16px;
         margin-bottom: 0; }
 
+.gallery .row {
+  margin: 0 -4px; }
+  .gallery .row > * {
+    padding: 0 4px; }
+.gallery .col-md-12, .gallery .col-md-6 {
+  padding: 0 4px; }
+  .gallery .col-md-12:last-of-type, .gallery .col-md-6:last-of-type {
+    margin-bottom: 8px; }
 .gallery .image {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   height: 350px;
-  margin-bottom: 52px; }
+  margin-bottom: 8px; }
   .gallery .image.video {
     position: relative;
     display: flex;
